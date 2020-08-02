@@ -34,6 +34,10 @@ class KeyboardViewController: UIInputViewController {
         
         self.nextKeyboardButton.leftAnchor.constraint(equalTo: self.view.leftAnchor).isActive = true
         self.nextKeyboardButton.bottomAnchor.constraint(equalTo: self.view.bottomAnchor).isActive = true
+        
+        let mainKeyboard = UINib(nibName:"MainKeyboard", bundle:nil).instantiate(withOwner: self,options:nil)[0] as! UIView
+        self.view.addSubview(mainKeyboard)
+        mainKeyboard.frame.size = self.view.frame.size
     }
     
     override func viewWillLayoutSubviews() {
@@ -47,15 +51,6 @@ class KeyboardViewController: UIInputViewController {
     
     override func textDidChange(_ textInput: UITextInput?) {
         // The app has just changed the document's contents, the document context has been updated.
-        
-        var textColor: UIColor
-        let proxy = self.textDocumentProxy
-        if proxy.keyboardAppearance == UIKeyboardAppearance.dark {
-            textColor = UIColor.white
-        } else {
-            textColor = UIColor.black
-        }
-        self.nextKeyboardButton.setTitleColor(textColor, for: [])
     }
 
 }

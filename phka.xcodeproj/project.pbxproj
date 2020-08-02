@@ -15,6 +15,8 @@
 		00D5917724D68B4F00C05E91 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 00D5917624D68B4F00C05E91 /* Assets.xcassets */; };
 		00D5917A24D68B4F00C05E91 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 00D5917924D68B4F00C05E91 /* Preview Assets.xcassets */; };
 		00D5917D24D68B4F00C05E91 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 00D5917B24D68B4F00C05E91 /* LaunchScreen.storyboard */; };
+		00E303DF24D6DF3D00643EFA /* MainKeyboard.xib in Resources */ = {isa = PBXBuildFile; fileRef = 00E303DE24D6DF3D00643EFA /* MainKeyboard.xib */; };
+		00E303E124D6E41D00643EFA /* KeyButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00E303E024D6E41D00643EFA /* KeyButton.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,6 +55,8 @@
 		00D5917924D68B4F00C05E91 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		00D5917C24D68B4F00C05E91 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		00D5917E24D68B4F00C05E91 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		00E303DE24D6DF3D00643EFA /* MainKeyboard.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MainKeyboard.xib; sourceTree = "<group>"; };
+		00E303E024D6E41D00643EFA /* KeyButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeyButton.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -78,6 +82,8 @@
 			children = (
 				00A885ED24D68CA700FE476B /* KeyboardViewController.swift */,
 				00A885EF24D68CA700FE476B /* Info.plist */,
+				00E303DE24D6DF3D00643EFA /* MainKeyboard.xib */,
+				00E303E024D6E41D00643EFA /* KeyButton.swift */,
 			);
 			path = keyboard;
 			sourceTree = "<group>";
@@ -203,6 +209,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				00E303DF24D6DF3D00643EFA /* MainKeyboard.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -224,6 +231,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				00A885EE24D68CA700FE476B /* KeyboardViewController.swift in Sources */,
+				00E303E124D6E41D00643EFA /* KeyButton.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

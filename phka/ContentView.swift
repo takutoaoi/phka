@@ -9,8 +9,12 @@
 import SwiftUI
 
 struct ContentView: View {
+    @State private var testField = ""
+
     var body: some View {
-        Text("Hello, World!")
+        TextField("test here", text: $testField)
+            .textFieldStyle(RoundedBorderTextFieldStyle())
+        .padding()
     }
 }
 
